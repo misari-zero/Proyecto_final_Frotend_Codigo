@@ -27,7 +27,7 @@ const { products } = useProductStore()
           <p>Stock: <span className="font-semibold">{`${products[params.id - 1].quantity}`}</span></p>
 
           <div className="pt-3">
-            <a href="https://www.apple.com/la/macbook-pro/" target='_blank'>
+            <a href={`${products[params.id - 1].info}`} target='_blank'>
               <button type="button"
                       className="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300
                   font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500
